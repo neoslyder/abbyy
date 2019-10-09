@@ -1,0 +1,97 @@
+<!--
+  ~ ABBYY® Mobile Web Capture © 2019 ABBYY Production LLC.
+  ~ ABBYY is either a registered trademark or a trademark of ABBYY Software Ltd.
+  -->
+
+<div class="promo-form">
+  <div class="promo-form-title">PERSONAL DETAILS</div>
+  <form name="scan_form">
+    <md-input-container class="title-container">
+      <label>Title</label>
+      <md-select class="md-no-underline" placeholder="Title" ng-model="$ctrl.personal.title">
+        <md-option ng-value="title" ng-repeat="title in $ctrl.titles">{{ title }}</md-option>
+      </md-select>
+    </md-input-container>
+
+    <div class="promo-form-column2">
+      <md-input-container>
+        <label>Name</label>
+        <input name="name" ng-model="$ctrl.personal.name" />
+      </md-input-container>
+      <md-input-container>
+        <label>Last name</label>
+        <input name="lastname" ng-model="$ctrl.personal.lastname" />
+      </md-input-container>
+    </div>
+
+    <md-input-container>
+      <label>Date of birth</label>
+      <md-datepicker ng-model="$ctrl.personal.birthday" md-hide-icons="triangle"></md-datepicker>
+    </md-input-container>
+    <md-input-container class="promo-form-textarea-field">
+      <label class="promo-form-textarea-label">Current address</label>
+      <textarea
+        class="promo-form-textarea"
+        ng-model="$ctrl.personal.address"
+        rows="3"
+        max-rows="5"
+        cols="50"
+      ></textarea>
+    </md-input-container>
+    <md-input-container>
+      <label>Email</label>
+      <input name="email" type="email" ng-model="$ctrl.personal.email" />
+    </md-input-container>
+
+    <md-button class="promo-form-button" ng-if="$ctrl.capturedData.license.images.length" md-no-ink>
+      <div class="promo-form-button-text" ng-click="$ctrl.scan('license')">
+        <md-icon class="promo-form-button-icon" md-svg-icon="images/promo/outline-attach_file-24px.svg"></md-icon>
+        Driver license scan
+      </div>
+      <md-icon
+        ng-click="$ctrl.rescan('license')"
+        class="promo-form-button-icon promo-form-button-icon--right"
+        md-svg-icon="images/promo/Re-scan.svg"
+      ></md-icon>
+    </md-button>
+    <md-button class="promo-form-button" ng-if="$ctrl.capturedData.utilityBill.images.length" md-no-ink>
+      <div class="promo-form-button-text" ng-click="$ctrl.scan('utilityBill')">
+        <md-icon class="promo-form-button-icon" md-svg-icon="images/promo/outline-attach_file-24px.svg"></md-icon>
+        utility bill scan
+      </div>
+      <md-icon
+        ng-click="$ctrl.rescan('utilityBill')"
+        class="promo-form-button-icon promo-form-button-icon--right"
+        md-svg-icon="images/promo/Re-scan.svg"
+      ></md-icon>
+    </md-button>
+    <div class="promo-buttons">
+      <md-button
+        class="promo-button promo-button--next"
+        ng-if="$ctrl.capturedData.license.images.length && $ctrl.capturedData.utilityBill.images.length"
+        ng-click="$ctrl.submit()"
+        md-no-ink
+        >SUBMIT</md-button
+      >
+    </div>
+  </form>
+
+  <md-button
+    ng-if="!$ctrl.capturedData.license.images.length && $ctrl.webCaptureInitialized "
+    ng-click="$ctrl.scan('license')"
+    class="promo-scan_button"
+    md-no-ink
+  >
+    <md-icon class="promo-scan_button-icon" md-svg-icon="images/promo/Scan_large.svg"></md-icon>
+    SCAN DRIVER LICENSE
+  </md-button>
+  <md-button
+    ng-if="$ctrl.capturedData.license.images.length && !$ctrl.capturedData.utilityBill.images.length"
+    ng-click="$ctrl.scan('utilityBill')"
+    class="promo-scan_button"
+    md-no-ink
+  >
+    <md-icon class="promo-scan_button-icon" md-svg-icon="images/promo/Scan_large.svg"></md-icon>
+    SCAN UTILITY BILL
+  </md-button>
+</div>

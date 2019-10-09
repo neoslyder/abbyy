@@ -1,0 +1,512 @@
+/*
+ * ABBYY® Mobile Web Capture © 2019 ABBYY Production LLC.
+ * ABBYY is either a registered trademark or a trademark of ABBYY Software Ltd.
+ */
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Regular.ttf), url(../fonts/OpenSans-Regular.woff);
+}
+
+@font-face {
+  font-family: FuturaMedium;
+  src: url(../fonts/FuturaMediumC.ttf), url(../fonts/FuturaMediumC.woff);
+}
+
+.promo-app {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+.promo-header {
+  -webkit-flex: 0 0 146px;
+  flex: 0 0 146px;
+  width: 100%;
+}
+
+.promo-header-logo_bkgr {
+  display: block;
+  position: absolute;
+  background-color: #f0f5fa;
+  width: 260px;
+  height: 260px;
+  border-radius: 130px;
+  left: -90px;
+  top: -112px;
+}
+
+.promo-header-logo_picture {
+  top: 30px;
+  position: absolute;
+}
+
+.promo-header-abbyy_text {
+  background-image: url(../images/promo/ABBYY-logo-95x27.svg);
+  width: 97px;
+  height: 27px;
+  position: absolute;
+  left: 206px;
+  top: 58px;
+}
+
+.promo-header-title_text {
+  height: 40px;
+  font-family: FuturaMedium;
+  font-size: 32px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  color: #323439;
+  position: absolute;
+  left: 205px;
+  top: 106px;
+}
+
+.promo-title {
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding-top: 40px;
+  padding-bottom: 22px;
+}
+
+.promo-page-title {
+  height: 40px;
+  font-family: OpenSans;
+  font-size: 26px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  text-align: center;
+  color: #323232;
+}
+
+.promo-page-sub_title {
+  height: 48px;
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #444444;
+  max-width: 288px;
+  margin-top: 8px;
+}
+
+.promo-form-content {
+  flex: 1 0 auto;
+  -webkit-flex: 1 0 auto;
+  width: 100%;
+  display: flex;
+}
+
+.promo-form {
+  padding: 33px 14px 44px 14px;
+  background-color: #f0f5fa;
+  width: 100%;
+}
+
+.promo-form-title {
+  padding: 24px 2px 6px 2px;
+}
+
+.promo-form-column2 {
+  display: flex;
+  flex-direction: column;
+}
+
+md-progress-linear .md-container {
+  height: 3px;
+  background-color: #ffffff;
+}
+
+md-progress-linear .md-bar {
+  background-color: #c60c30;
+}
+
+md-input-container {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  margin: 16px 0 0;
+  padding: 0 2px;
+  padding-left: 0;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 1px #c8cdd2;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.title-container .md-select-icon {
+  position: absolute;
+  right: 31px;
+}
+
+md-input-container.md-input-invalid {
+  background-color: #f0dee9;
+  border: solid 1px #e7a4af;
+}
+
+md-input-container[disabled] {
+  background-color: #e6ebf0;
+}
+
+md-input-container[disabled] label {
+  color: #666666;
+}
+
+md-input-container label:not(.md-no-float):not(.md-container-ignore) {
+  padding-left: 10px;
+  width: auto;
+  height: 17px;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.08;
+  letter-spacing: normal;
+  color: #444444;
+}
+
+md-input-container.md-input-focused label:not(.md-no-float),
+md-input-container.md-input-has-value label:not(.md-no-float) {
+  height: 14px;
+  line-height: 1.08;
+  font-size: 13px;
+  color: #666666;
+  transform: translate3d(0, 18px, 0);
+  padding-left: 10px;
+}
+
+md-input-container .md-input {
+  border-bottom: none;
+  border-radius: 3px;
+  height: 44px;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 44px;
+  letter-spacing: normal;
+  color: #444444;
+  padding: 0 0 0 10px;
+}
+
+md-input-container.md-input-focused .md-input,
+md-input-container.md-input-has-value .md-input {
+  padding-top: 10px;
+  height: 44px;
+  line-height: 44px;
+}
+
+md-input-container > md-select {
+  height: 44px;
+  line-height: 44px;
+  padding-left: 10px;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 44px;
+  letter-spacing: normal;
+  color: #444444;
+}
+
+md-input-container.md-input-has-value .md-select-value > span:not(.md-select-icon) {
+  transform: none;
+  padding-top: 6px;
+  height: 38px;
+}
+
+md-input-container > md-select.ng-empty {
+  padding: 0 0 0 10px;
+}
+
+md-select .md-select-value.md-select-placeholder {
+  height: 44px;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  color: #444444;
+}
+
+md-input-container.md-input-focused:not([md-no-float]) .md-select-placeholder span:first-child {
+  transform: translateY(-8px) translateX(-2px) scale(0.75);
+}
+
+._md-datepicker-floating-label._md-datepicker-has-calendar-icon > label:not(.md-no-float):not(.md-container-ignore) {
+  right: unset;
+}
+
+.md-icon-button + .md-datepicker-input-container {
+  margin: 0;
+}
+
+.md-button[disabled] {
+  background-color: #c8cdd2;
+}
+
+md-input-container.promo-form-textarea-field {
+  height: 121px;
+  /*overflow: hidden;*/
+}
+md-input-container.promo-form-textarea-field textarea,
+md-input-container.md-input-has-value.promo-form-textarea-field textarea,
+md-input-container.md-input-focused.promo-form-textarea-field textarea {
+  line-height: 1.21;
+  overflow: hidden;
+  height: 100px !important;
+  margin-top: 20px;
+}
+
+md-input-container.promo-form-textarea-field--verify {
+  background-color: #f9f5af;
+  color: #444444;
+  border: solid 1px#ffe686;
+}
+
+.md-datepicker-calendar-pane.md-pane-open {
+  left: 15px !important;
+}
+.md-datepicker-calendar-pane.md-pane-open {
+  box-shadow: none;
+  left: 0px !important;
+}
+
+._md-datepicker-floating-label > md-datepicker .md-datepicker-button {
+  float: right;
+  right: 22px;
+  margin: -8px 0;
+}
+
+.promo-buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  /*justify-content: flex-end;*/
+  justify-content: space-between;
+  padding-top: 22px;
+}
+
+.promo-button {
+  width: 88px;
+  height: 44px;
+  border-radius: 3px;
+  background-color: #4169a4;
+  font-family: OpenSans;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 44px;
+  letter-spacing: normal;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.promo-button.promo-button--back {
+  background-color: #ffffff;
+  color: #2b57cd;
+  flex: 0 1 88px;
+}
+
+.promo-button.promo-button--send {
+  background-color: #c60c30;
+  color: #ffffff;
+  flex: 0 1 145px;
+}
+
+.promo-button.promo-button--send[disabled] {
+  background-color: #c8cdd2;
+}
+
+.promo-form-button {
+  width: 100%;
+  margin: 22px 0 0;
+  height: 44px;
+  border-radius: 3px;
+  background-color: #e6ebf0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-form-button-text {
+  height: 22px;
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4169a4;
+}
+
+.promo-form-button-icon {
+  margin: 0;
+  color: #607acd;
+  vertical-align: text-bottom;
+}
+.promo-form-button-icon.promo-form-button-icon--right {
+  margin-right: 15px;
+}
+
+.promo-page-final {
+  padding: 14px 22px;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+}
+
+.promo-page-final_image {
+  width: 250px;
+  align-self: center;
+}
+
+.promo-page-final_text {
+  height: 24px;
+  font-family: OpenSans;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  margin-top: 33px;
+}
+
+.promo-final-page {
+  width: 284px;
+  height: 66px;
+  padding-top: 4px;
+  line-height: 1.38;
+}
+
+.promo-scan_button {
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  height: 66px;
+  background-color: #4169a4;
+  font-family: OpenSans;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.promo-scan_button.md-button:not([disabled]):hover {
+  background-color: #4169a4;
+}
+
+.promo-scan_button-icon {
+  margin-right: 11px;
+  vertical-align: text-bottom;
+}
+
+.ui-notification {
+  /*position: fixed;
+    bottom: 80px;
+    width: calc(100% - 30px);
+    height: 96px;*/
+  border-radius: 2px;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.22);
+  background-color: #30a49f;
+  /*margin: 0 15px;*/
+}
+
+.ui-notification.info {
+  background-color: #eba400;
+}
+
+.ui-notification .message {
+  height: 66px;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  color: #ffffff;
+  padding: 15px;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .promo-header-title_text {
+    left: 404px;
+    top: 65px;
+    font-size: 40px;
+    line-height: 1.05;
+    letter-spacing: 0.5px;
+  }
+
+  .promo-header-abbyy_text {
+    left: 285px;
+    top: 72px;
+  }
+
+  .promo-header-logo_picture {
+    width: 254px;
+    height: 96px;
+  }
+
+  .promo-header-logo_bkgr {
+    left: -50px;
+    top: -85px;
+  }
+
+  .promo-page-title {
+    height: 33px;
+    font-size: 24px;
+    line-height: 1.18;
+  }
+
+  .promo-page-sub_title {
+    max-width: 428px;
+  }
+
+  /* .promo-form {
+        padding: 33px 22px;
+    } */
+
+  .promo-form-column2 {
+    flex-direction: row;
+    margin-top: 16px;
+  }
+
+  .promo-form-column2 md-input-container {
+    margin: 0 12px;
+  }
+  .promo-form-column2 md-input-container:first-child {
+    margin-left: 0;
+  }
+  .promo-form-column2 md-input-container:last-child {
+    margin-right: 0;
+  }
+}

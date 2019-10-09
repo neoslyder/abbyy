@@ -1,0 +1,584 @@
+/** [AIV_SHORT]  Build version: 1.5.1-rc - Monday, September 23rd, 2019, 1:53:47 PM  **/ 
+ /*!
+ * ABBYY® Mobile Web Capture © 2019 ABBYY Production LLC.
+ * ABBYY is either a registered trademark or a trademark of ABBYY Software Ltd.
+ */
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url(./SourceSansPro-Regular.woff2) format("woff2"); }
+
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url(./SourceSansPro-Semibold.woff2) format("woff2");
+  font-weight: 600; }
+
+body {
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none; }
+
+.ABBYY_Capture_Module {
+  background: #222222;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 17px;
+  font-family: SourceSansPro, Arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  z-index: 9999;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  bottom: 0;
+  right: 0;
+  /** global styles */ }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module__Container {
+    max-width: 1366px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; }
+    @media only screen and (min-width: 1367px) {
+      .ABBYY_Capture_Module .ABBYY_Capture_Module__Container {
+        max-width: 560px; } }
+  .ABBYY_Capture_Module button {
+    cursor: pointer;
+    font-size: 17px;
+    font-family: SourceSansPro, Arial, sans-serif;
+    font-weight: 600; }
+    .ABBYY_Capture_Module button:active {
+      opacity: 0.3; }
+    .ABBYY_Capture_Module button:disabled {
+      cursor: default;
+      opacity: 0.6; }
+  .ABBYY_Capture_Module img {
+    -webkit-user-select: all;
+        -ms-user-select: all;
+            user-select: all; }
+
+.ABBYY_Capture_Module .ABBYY_Capture_Module__TopPanel .ABBYY_Capture_Module__ToolBar_button {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  font-size: 14px;
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 25%;
+  margin-right: 8px;
+  cursor: pointer; }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module__TopPanel .ABBYY_Capture_Module__ToolBar_button:last-child {
+    margin-right: 0; }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module__TopPanel .ABBYY_Capture_Module__ToolBar_button .ABBYY_Capture_Module__ToolBar_button_img {
+    align-self: center;
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin-right: 5px; }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module__TopPanel .ABBYY_Capture_Module__ToolBar_button .ABBYY_Capture_Module__ToolBar_button_img.ABBYY_Capture_Module__ToolBar_button_img--delete {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTcgOC41aDEwVjIxSDdWOC41em0xMS4yNS0zLjc1djIuNUg1Ljc1di0yLjVIOS41VjMuNWg1djEuMjVoMy43NXoiLz4KPC9zdmc+Cg==); }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module__TopPanel .ABBYY_Capture_Module__ToolBar_button .ABBYY_Capture_Module__ToolBar_button_img.ABBYY_Capture_Module__ToolBar_button_img--crop {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIwIDE0Ljk5NnYxLjk5MmgtMy4wMDV2My4wMDhoLTEuOTl2LTMuMDA4aC04VjlINFY2Ljk4OGgzLjAwNVY0aDEuOTl2Mi45ODhoOHY4LjAwOEgyMHptLTExLjAwNSAwaDYuMDFWOWgtNi4wMXY1Ljk5NnoiLz4KPC9zdmc+Cg==); }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module__TopPanel .ABBYY_Capture_Module__ToolBar_button .ABBYY_Capture_Module__ToolBar_button_img.ABBYY_Capture_Module__ToolBar_button_img--retake {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTguMjk2IDQuNDU2TDkuNjk3IDNsMTAuMTQ1IDkuNzItMS40MDEgMS40NTYtMTAuMTQ1LTkuNzJ6bS0uNDU0IDkuNTAzaDkuMDk5djEuMDA0SDcuODQydi0xLjAwNHptLTQuMDI2IDIuMDA3SDIwVjIwSDMuODE2di00LjAzNHptMi4wMzMtMS4wMDNoLS4zNzVhMy4zOSAzLjM5IDAgMCAxLTIuNDU4LTEuMDUzQzIuMzQgMTMuMjIyIDIgMTIuNCAyIDExLjQ0MWMwLS45ODQuMzQ1LTEuODIgMS4wMzYtMi41MDlBMy40MDggMy40MDggMCAwIDEgNS41MzMgNy45aDEuMzIyVjUuODkybDMuMDQgMy4wMy0zLjA0IDMuMDFWOS45MjdINS41NzJjLS42NTggMC0xLjExNS4xNjQtMS4zNzEuNDkyLS4yNTcuMzI4LS4zODUuNjY5LS4zODUgMS4wMjN2LjA0YzAgLjQwNi4xNDUuNzU0LjQzNCAxLjA0Mi4yOS4yODkuNjQ1LjQzMyAxLjA2Ni40MzNoLjA3OWEuMTc2LjE3NiAwIDAgMCAuMDc5LS4wMmguMzc1djIuMDI3eiIvPgo8L3N2Zz4K); }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module__TopPanel .ABBYY_Capture_Module__ToolBar_button .ABBYY_Capture_Module__ToolBar_button_img.ABBYY_Capture_Module__ToolBar_button_img--rotate {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE2LjczNiAxNC4zNDZsMi4xODkgMS4wOTZhOC40MzIgOC40MzIgMCAwIDEtMS4wOTUgMS43MTIgNy43NTcgNy43NTcgMCAwIDEtMS40MzcgMS4zNDZsLTEuMzctMi4wNzdjLjM2Ny0uMjcuNjk0LS41NzcuOTgtLjkyMy4yODUtLjM0Ni41MjMtLjcyNC43MTQtMS4xMzVsLjAxOS0uMDE5ek0xMS44NjIgNGguMDJjLjY5NyAwIDEuMzczLjA4NyAyLjAyNy4yNi42NTMuMTczIDEuMjYzLjQyIDEuODI3Ljc0YTguMDg2IDguMDg2IDAgMCAxIDIuODA4IDIuNjU0TDIxIDYuNDYybC0xLjIxOCA2LjE1My02LjA5Mi0yLjQ2MSAyLjU1LTEuMzQ2YTUuNDM5IDUuNDM5IDAgMCAwLTEuODkzLTEuNjI1IDUuMjU3IDUuMjU3IDAgMCAwLTIuNDg1LS42MDYgNS4zNjMgNS4zNjMgMCAwIDAtMy44MzYgMS41ODcgNS45MDkgNS45MDkgMCAwIDAtMS4xOCAxLjcyQTUuMjUzIDUuMjUzIDAgMCAwIDYuMzggMTJjLjAxMi4zMzMuMDUuNjU3LjExNC45NzEuMDYzLjMxNC4xNTIuNjE5LjI2Ni45MTRsLTIuMzIyLjY5MmE3LjI2NiA3LjI2NiAwIDAgMS0uMzI0LTEuMjNBNy44MSA3LjgxIDAgMCAxIDQgMTJjMC0xLjEwMy4yMDYtMi4xMzguNjE5LTMuMTA2YTguMDI4IDguMDI4IDAgMCAxIDEuNjg0LTIuNTI5IDguMTA1IDguMTA1IDAgMCAxIDIuNDk0LTEuNzExQTcuNjg3IDcuNjg3IDAgMCAxIDExLjg2MiA0ek05LjQyNiAxNi45MjNsLS45NzEgMi4yMTJBOC41IDguNSAwIDAgMSA2Ljc1IDE3Ljk4YTcuMzE0IDcuMzE0IDAgMCAxLTEuMzIzLTEuNTJsMS45MjMtMS4zODRjLjI2Ni4zODUuNTcuNzM0LjkxMyAxLjA0OC4zNDMuMzE0LjcxNy41NzQgMS4xMjMuNzc5bC4wMzkuMDJ6bTIuNDM2LjYxNWwxLjcxNC0uMjUuNzIzIDIuMzQ3YTcuNzQ0IDcuNzQ0IDAgMCAxLTIuMzYuMzY1aC0xLjU0M2wuNDk1LTIuNDYyaC45NzF6Ii8+Cjwvc3ZnPgo=); }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module__TopPanel .ABBYY_Capture_Module__ToolBar_button:active {
+    opacity: 0.6; }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module__TopPanel .ABBYY_Capture_Module__ToolBar_button.ABBYY_Capture_Module__ToolBar_button--disabled {
+    opacity: 0.3; }
+
+.ABBYY_Capture_Module .ABBYY_Capture_Module__TopPanel {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  height: 52px;
+  align-items: center;
+  box-sizing: border-box; }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module__TopPanel span:active {
+    opacity: 0.6; }
+
+.ABBYY_Capture_Module .ABBYY_Capture_Module_BottomPanel {
+  height: 68px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  padding: 0 16px; }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module_BottomPanel .ABBYY_Capture_Module_BottomPanel_button {
+    height: 52px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    text-align: center;
+    color: #424650;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module_BottomPanel .ABBYY_Capture_Module_BottomPanel_button:first-child {
+      margin-right: 16px; }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module_BottomPanel .ABBYY_Capture_Module_BottomPanel_button.ABBYY_Capture_Module_BottomPanel_button--save {
+      background-color: #4a8ee0;
+      color: #ffffff; }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module_BottomPanel .ABBYY_Capture_Module_BottomPanel_button:disabled {
+      opacity: 0.3; }
+
+.ABBYY_Capture_Module .ABBYY_Capture_Module_ImagePreview {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  max-width: 560px; }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module_ImagePreview .ABBYY_Capture_Module_ImageParentContainer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module_ImagePreview .ABBYY_Capture_Module_ImageParentContainer img {
+      max-width: 100%;
+      max-height: inherit;
+      object-fit: contain; }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module_ImagePreview .ABBYY_Capture_Module_ImageParentContainer .ABBYY_Capture_Module-Show_Warnings_Button {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      left: calc(50% - 20px);
+      border-radius: 8px;
+      background-color: rgba(0, 0, 0, 0.8);
+      bottom: 145px; }
+      .ABBYY_Capture_Module .ABBYY_Capture_Module_ImagePreview .ABBYY_Capture_Module_ImageParentContainer .ABBYY_Capture_Module-Show_Warnings_Button:after {
+        position: absolute;
+        margin: 8px;
+        content: '';
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNGRkFCNDAiIGQ9Ik0xOS43NzYgMTcuMDY2Yy4yNjEuNTY2LjI5NCAxLjAzLjA5OCAxLjM5MS0uMTk2LjM2Mi0uNTk1LjU0My0xLjE5Ni41NDNINS4yMjhjLS42MDEgMC0uOTgtLjIxNy0xLjEzNy0uNjUxLS4xNTctLjQzNS0uMTExLS45MjguMTM3LTEuNDhsNi43MjUtMTIuMjM3Yy4wOTItLjE4NS4yMjYtLjMzNi40MDItLjQ1NC4xNzctLjExOS4zNzYtLjE3OC41OTgtLjE3OC4yMjIgMCAuNDIyLjA2LjU5OC4xNzguMTc3LjExOC4zMS4yNzYuNDAyLjQ3M2w2LjgyMyAxMi40MTV6bS02LjgyMy0uMDk5di0yLjAxM2gtMnYyLjAxM2gyem0wLTQuMDQ2VjcuODY4aC0ydjUuMDUzaDJ6Ii8+CiAgICA8L2c+Cjwvc3ZnPgo=); }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module_ImagePreview .ABBYY_Capture_Module__MessagePage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0; }
+
+.ABBYY_Capture_Module__Navbar {
+  height: 52px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6px; }
+  .ABBYY_Capture_Module__Navbar .ABBYY_Capture_Module__Navbar_pager {
+    height: 52px;
+    align-self: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    line-height: 21px;
+    text-align: center; }
+  .ABBYY_Capture_Module__Navbar .ABBYY_Capture_Module__Navbar_prev,
+  .ABBYY_Capture_Module__Navbar .ABBYY_Capture_Module__Navbar_next {
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    top: calc(50% - 26px - 31px);
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer; }
+    .ABBYY_Capture_Module__Navbar .ABBYY_Capture_Module__Navbar_prev:after,
+    .ABBYY_Capture_Module__Navbar .ABBYY_Capture_Module__Navbar_next:after {
+      content: '';
+      position: absolute;
+      top: 12px;
+      left: 16px;
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+      display: block;
+      color: #ffffff; }
+    .ABBYY_Capture_Module__Navbar .ABBYY_Capture_Module__Navbar_prev.ABBYY_Capture_Module__Navbar_next--disabled, .ABBYY_Capture_Module__Navbar .ABBYY_Capture_Module__Navbar_prev.ABBYY_Capture_Module__Navbar_prev--disabled,
+    .ABBYY_Capture_Module__Navbar .ABBYY_Capture_Module__Navbar_next.ABBYY_Capture_Module__Navbar_next--disabled,
+    .ABBYY_Capture_Module__Navbar .ABBYY_Capture_Module__Navbar_next.ABBYY_Capture_Module__Navbar_prev--disabled {
+      opacity: 0.3;
+      cursor: default; }
+  .ABBYY_Capture_Module__Navbar .ABBYY_Capture_Module__Navbar_prev {
+    left: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px; }
+    .ABBYY_Capture_Module__Navbar .ABBYY_Capture_Module__Navbar_prev:after {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0xNC45OSA0bDEuNTEgMS41Mi02LjQ2MiA2LjQ5TDE2LjUgMTguNSAxNS4wMSAyMCA3IDExLjk5eiIvPgogICAgPC9nPgo8L3N2Zz4K); }
+  .ABBYY_Capture_Module__Navbar .ABBYY_Capture_Module__Navbar_next {
+    right: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px; }
+    .ABBYY_Capture_Module__Navbar .ABBYY_Capture_Module__Navbar_next:after {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTI0IDBIMHYyNGgyNHoiLz4KICAgICAgICA8cGF0aCBmaWxsPSIjRkZGIiBkPSJNOS4wMSA0TDcuNSA1LjUybDYuNDYyIDYuNDlMNy41IDE4LjUgOC45OSAyMCAxNyAxMS45OXoiLz4KICAgIDwvZz4KPC9zdmc+Cg==); }
+
+div.ABBYY_Capture_Module_Process_Page {
+  background: #222222;
+  align-items: center;
+  z-index: 1000; }
+  div.ABBYY_Capture_Module_Process_Page span.ABBYY_Capture_Module__MessagePage-Text {
+    width: 263px;
+    height: 21px;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 24px; }
+  div.ABBYY_Capture_Module_Process_Page .ABBYY_Capture_Module__MessagePage-Icon.ABBYY_Capture_Module_Process_Page_loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0xMCA4LjVjMCAuNDIxLS4xNDguNzc2LS40NDQgMS4wNjYtLjI5Ni4yOS0uNjQ4LjQzNC0xLjA1Ni40MzQtLjQwOCAwLS43Ni0uMTQ1LTEuMDU2LS40MzRBMS40MzMgMS40MzMgMCAwIDEgNyA4LjVjMC0uNDA4LjE0OC0uNzYuNDQ0LTEuMDU2QTEuNDQyIDEuNDQyIDAgMCAxIDguNSA3Yy40MDggMCAuNzYuMTQ4IDEuMDU2LjQ0NC4yOTYuMjk2LjQ0NC42NDguNDQ0IDEuMDU2ek02IDE3bDMuMDAxLTUuMDIyIDIgMy4wMjVMMTQuMDA0IDEwIDE4IDE3SDZ6TTE5IDVINXYxNGgxNFY1em0uOTk3LTJjLjI3MyAwIC41MDQuMTA1LjcuM0EuOTQyLjk0MiAwIDAgMSAyMSA0djE2LjAwNGMwIC4yNzMtLjEwOS41LS4zMDQuNjk2YS45NTguOTU4IDAgMCAxLS43LjNINC4wMDRhLjk1OC45NTggMCAwIDEtLjctLjMuOTU0Ljk1NCAwIDAgMS0uMzAzLS42OTZWNGMwLS4yODYuMTA5LS41MDUuMzA0LS43YS45NTguOTU4IDAgMCAxIC43LS4zaDE1Ljk5M3oiLz4KICAgIDwvZz4KPC9zdmc+Cg==); }
+    div.ABBYY_Capture_Module_Process_Page .ABBYY_Capture_Module__MessagePage-Icon.ABBYY_Capture_Module_Process_Page_loader:before {
+      content: '';
+      position: absolute;
+      background-image: url(data:image/png;base64,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);
+      width: 56px;
+      height: 56px;
+      animation-name: spin;
+      animation-duration: 1.2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg); } }
+
+.ABBYY_Capture_Module__MessagePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background: white; }
+  .ABBYY_Capture_Module__MessagePage .ABBYY_Capture_Module__MessagePage-Icon {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+    margin: 8px;
+    object-fit: contain;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI1IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS41IDBoMjR2MjRILjV6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0iI0M2MEMzMCIgZD0iTTIwLjI3NiAxNy4wNjZjLjI2MS41NjYuMjk0IDEuMDMuMDk4IDEuMzkxLS4xOTYuMzYyLS41OTUuNTQzLTEuMTk2LjU0M0g1LjcyOGMtLjYwMSAwLS45OC0uMjE3LTEuMTM3LS42NTEtLjE1Ny0uNDM1LS4xMTEtLjkyOC4xMzctMS40OGw2LjcyNS0xMi4yMzdjLjA5Mi0uMTg1LjIyNi0uMzM2LjQwMi0uNDU0LjE3Ny0uMTE5LjM3Ni0uMTc4LjU5OC0uMTc4LjIyMiAwIC40MjIuMDYuNTk4LjE3OC4xNzcuMTE4LjMxLjI3Ni40MDIuNDczbDYuODIzIDEyLjQxNXptLTYuODIzLS4wOTl2LTIuMDEzaC0ydjIuMDEzaDJ6bTAtNC4wNDZWNy44NjhoLTJ2NS4wNTNoMnoiLz4KICAgIDwvZz4KPC9zdmc+Cg==); }
+  .ABBYY_Capture_Module__MessagePage .ABBYY_Capture_Module__MessagePage-Text {
+    color: #000000;
+    text-align: center; }
+
+.ABBYY_Capture_Module__Message_Popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
+  .ABBYY_Capture_Module__Message_Popup .ABBYY_Capture_Module__Message_Popup_Container {
+    min-width: 240px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    align-self: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column; }
+    .ABBYY_Capture_Module__Message_Popup .ABBYY_Capture_Module__Message_Popup_Container .ABBYY_Capture_Module__Message-Icon {
+      margin: 8px;
+      align-self: center;
+      width: 24px;
+      height: 24px;
+      object-fit: contain; }
+      .ABBYY_Capture_Module__Message_Popup .ABBYY_Capture_Module__Message_Popup_Container .ABBYY_Capture_Module__Message-Icon.ABBYY_Capture_Module__Message-Icon--warning {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNGRkFCNDAiIGQ9Ik0xOS43NzYgMTcuMDY2Yy4yNjEuNTY2LjI5NCAxLjAzLjA5OCAxLjM5MS0uMTk2LjM2Mi0uNTk1LjU0My0xLjE5Ni41NDNINS4yMjhjLS42MDEgMC0uOTgtLjIxNy0xLjEzNy0uNjUxLS4xNTctLjQzNS0uMTExLS45MjguMTM3LTEuNDhsNi43MjUtMTIuMjM3Yy4wOTItLjE4NS4yMjYtLjMzNi40MDItLjQ1NC4xNzctLjExOS4zNzYtLjE3OC41OTgtLjE3OC4yMjIgMCAuNDIyLjA2LjU5OC4xNzguMTc3LjExOC4zMS4yNzYuNDAyLjQ3M2w2LjgyMyAxMi40MTV6bS02LjgyMy0uMDk5di0yLjAxM2gtMnYyLjAxM2gyem0wLTQuMDQ2VjcuODY4aC0ydjUuMDUzaDJ6Ii8+CiAgICA8L2c+Cjwvc3ZnPgo=); }
+      .ABBYY_Capture_Module__Message_Popup .ABBYY_Capture_Module__Message_Popup_Container .ABBYY_Capture_Module__Message-Icon.ABBYY_Capture_Module__Message-Icon--autocapture {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0xIDIzdi02YzEuMzMzIDAgMiAuNjY3IDIgMnYyaDJjMS4zMzMgMCAyIC42NjcgMiAySDF6TTEgMWg2YzAgMS4zMzMtLjY2NyAyLTIgMkgzdjJjMCAxLjMzMy0uNjY3IDItMiAyVjF6TTIzIDF2NmMtMS4zMzMgMC0yLS42NjctMi0yVjNoLTJjLTEuMzMzIDAtMi0uNjY3LTItMmg2ek0yMyAyM2gtNmMwLTEuMzMzLjY2Ny0yIDItMmgydi0yYzAtMS4zMzMuNjY3LTIgMi0ydjZ6TTEwLjY0NyAxMy43NTdsMS4zNS0zLjcyNiAxLjM0OSAzLjcyNmgtMi43ek00Ljk5NyA1aDE0djE0aC0xNFY1em05LjYzIDEyLjI0M2gxLjc0MmwtMy41MDItOS42MjFoLTEuNzQybC0zLjUwMiA5LjYyMWgxLjc0M2wuNjQ5LTEuNzQzaDMuOTYzbC42NDkgMS43NDN6Ii8+CiAgICA8L2c+Cjwvc3ZnPgo=); }
+    .ABBYY_Capture_Module__Message_Popup .ABBYY_Capture_Module__Message_Popup_Container button {
+      border: none;
+      height: 20px;
+      color: #ffdc48;
+      background: transparent;
+      align-self: center; }
+      .ABBYY_Capture_Module__Message_Popup .ABBYY_Capture_Module__Message_Popup_Container button:active {
+        opacity: 0.6; }
+    .ABBYY_Capture_Module__Message_Popup .ABBYY_Capture_Module__Message_Popup_Container .ABBYY_Capture_Module__Message {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16px; }
+      .ABBYY_Capture_Module__Message_Popup .ABBYY_Capture_Module__Message_Popup_Container .ABBYY_Capture_Module__Message .ABBYY_Capture_Module__Message-Title {
+        margin: 0 auto 4px;
+        text-align: center; }
+      .ABBYY_Capture_Module__Message_Popup .ABBYY_Capture_Module__Message_Popup_Container .ABBYY_Capture_Module__Message .ABBYY_Capture_Module__Message-Text {
+        opacity: 0.8;
+        font-size: 14px;
+        text-align: center; }
+
+.ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #ffffff; }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView video {
+    background: #222222; }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView video,
+  .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView > canvas {
+    object-fit: cover; }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView .ABBYY_Capture_Module__Messages {
+    display: flex;
+    justify-content: center; }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView .ABBYY_Capture_Module__Message_Popup .ABBYY_Capture_Module__Message_Popup_Container {
+    z-index: 1; }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView .ABBYY_Capture_Module__Message_Popup button {
+    width: 208px;
+    height: 52px;
+    border-radius: 8px;
+    background-color: #4a8ee0;
+    color: #ffffff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+
+.ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView .online_capture-document {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView .online_capture-document .online_capture-document_title {
+    padding: 8px 16px;
+    border-radius: 14pt;
+    background-color: rgba(33, 33, 33, 0.72);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    line-height: 22pt;
+    font-size: 17px;
+    letter-spacing: 0.41pt;
+    color: white; }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView .online_capture-document img {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    display: block; }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView .online_capture-document img.online_capture-rectangle.rec-0 {
+      top: 16px;
+      left: 16px; }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView .online_capture-document img.online_capture-rectangle.rec-90 {
+      top: 16px;
+      right: 16px;
+      transform: rotate(90deg); }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView .online_capture-document img.online_capture-rectangle.rec-180 {
+      bottom: 16px;
+      right: 16px;
+      transform: rotate(180deg); }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView .online_capture-document img.online_capture-rectangle.rec-270 {
+      bottom: 16px;
+      left: 16px;
+      transform: rotate(270deg); }
+
+.ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView .ABBYY_Capture_Module_CaptureView_ButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding: 48px; }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView .ABBYY_Capture_Module_CaptureView_ButtonContainer input {
+    display: none; }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView .ABBYY_Capture_Module_CaptureView_ButtonContainer .ABBYY_Capture_Module_CaptureView_Button {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer; }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView .ABBYY_Capture_Module_CaptureView_ButtonContainer .ABBYY_Capture_Module_CaptureView_Button:after {
+      content: '';
+      top: 8px;
+      left: 8px;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      object-fit: contain;
+      display: block;
+      color: #ffffff; }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView .ABBYY_Capture_Module_CaptureView_ButtonContainer .ABBYY_Capture_Module_CaptureView_Button.ABBYY_Capture_Module_CaptureView_Button__Get_File_Button:after {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0xMCA4LjVjMCAuNDIxLS4xNDguNzc2LS40NDQgMS4wNjYtLjI5Ni4yOS0uNjQ4LjQzNC0xLjA1Ni40MzQtLjQwOCAwLS43Ni0uMTQ1LTEuMDU2LS40MzRBMS40MzMgMS40MzMgMCAwIDEgNyA4LjVjMC0uNDA4LjE0OC0uNzYuNDQ0LTEuMDU2QTEuNDQyIDEuNDQyIDAgMCAxIDguNSA3Yy40MDggMCAuNzYuMTQ4IDEuMDU2LjQ0NC4yOTYuMjk2LjQ0NC42NDguNDQ0IDEuMDU2ek02IDE3bDMuMDAxLTUuMDIyIDIgMy4wMjVMMTQuMDA0IDEwIDE4IDE3SDZ6TTE5IDVINXYxNGgxNFY1em0uOTk3LTJjLjI3MyAwIC41MDQuMTA1LjcuM0EuOTQyLjk0MiAwIDAgMSAyMSA0djE2LjAwNGMwIC4yNzMtLjEwOS41LS4zMDQuNjk2YS45NTguOTU4IDAgMCAxLS43LjNINC4wMDRhLjk1OC45NTggMCAwIDEtLjctLjMuOTU0Ljk1NCAwIDAgMS0uMzAzLS42OTZWNGMwLS4yODYuMTA5LS41MDUuMzA0LS43YS45NTguOTU4IDAgMCAxIC43LS4zaDE1Ljk5M3oiLz4KICAgIDwvZz4KPC9zdmc+Cg==); }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView .ABBYY_Capture_Module_CaptureView_ButtonContainer .ABBYY_Capture_Module_CaptureView_Button.ABBYY_Capture_Module_CaptureView_Button__Close_Button {
+      z-index: 1000; }
+      .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView .ABBYY_Capture_Module_CaptureView_ButtonContainer .ABBYY_Capture_Module_CaptureView_Button.ABBYY_Capture_Module_CaptureView_Button__Close_Button:after {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0xOSAxNy4zTDE3LjMgMTkgMTIgMTMuNyA2LjcgMTkgNSAxNy4zbDUuMy01LjNMNSA2LjcgNi43IDVsNS4zIDUuM0wxNy4zIDUgMTkgNi43IDEzLjcgMTJ6Ii8+CiAgICA8L2c+Cjwvc3ZnPgo=); }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView .ABBYY_Capture_Module_CaptureView_ButtonContainer .ABBYY_Capture_Module_CaptureView_Button:active {
+      opacity: 0.6; }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView .ABBYY_Capture_Module_CaptureView_ButtonContainer .ABBYY_Capture_Module_CaptureView__Capture_Button {
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.82);
+    outline: none;
+    pointer-events: initial;
+    cursor: pointer; }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView .ABBYY_Capture_Module_CaptureView_ButtonContainer .ABBYY_Capture_Module_CaptureView__Capture_Button.ABBYY_Capture_Module_CaptureView__Capture_Button--disabled {
+      background-color: rgba(255, 255, 255, 0.82);
+      pointer-events: none;
+      opacity: 0.3; }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView .ABBYY_Capture_Module_CaptureView_ButtonContainer .ABBYY_Capture_Module_CaptureView__Capture_Button:active {
+      opacity: 0.6; }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module_CaptureView .ABBYY_Capture_Module_CaptureView_ButtonContainer .ABBYY_Capture_Module_CaptureView__Capture_Button:before {
+      position: absolute;
+      left: -8px;
+      top: -8px;
+      content: '';
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      background: transparent;
+      border-radius: 56px;
+      border: 4px solid rgba(255, 255, 255, 0.82); }
+
+.ABBYY_Capture_Module_Wasm_Loading_Page {
+  background: #ffffff;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1001; }
+  .ABBYY_Capture_Module_Wasm_Loading_Page span.ABBYY_Capture_Module__MessagePage-Text {
+    padding-top: 24px; }
+  .ABBYY_Capture_Module_Wasm_Loading_Page .ABBYY_Capture_Module_Wasm_Loading_Page_loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiM0QThFRTAiIGQ9Ik0xMy43MSA0TDE4IDguNjk1djEwLjM2NmEuOTUuOTUgMCAwIDEtLjI1MS42NjMuNzg4Ljc4OCAwIDAgMS0uNjA0LjI3Nkg2Ljg1NWEuNzg4Ljc4OCAwIDAgMS0uNjA0LS4yNzZBLjk1Ljk1IDAgMCAxIDYgMTkuMDZWNC45NTdjMC0uMjcuMDg0LS40OTcuMjUxLS42OEEuNzg4Ljc4OCAwIDAgMSA2Ljg1NSA0aDYuODU0em0yLjU4IDE0LjEyMlY5LjYzNGgtMi41OGEuNzg4Ljc4OCAwIDAgMS0uNjA0LS4yNzYuOTUuOTUgMCAwIDEtLjI1MS0uNjYzVjUuODZINy43MDl2MTIuMjYyaDguNTgyek0yIDBoNmEyIDIgMCAwIDEtMiAySDJ2NGEyIDIgMCAwIDEtMiAyVjJhMiAyIDAgMCAxIDItMnptMjAgMGEyIDIgMCAwIDEgMiAydjZhMiAyIDAgMCAxLTItMlYyaC00YTIgMiAwIDAgMS0yLTJoNnptMCAyNGgtNmEyIDIgMCAwIDEgMi0yaDR2LTRhMiAyIDAgMCAxIDItMnY2YTIgMiAwIDAgMS0yIDJ6TTIgMjRhMiAyIDAgMCAxLTItMnYtNmEyIDIgMCAwIDEgMiAydjRoNGEyIDIgMCAwIDEgMiAySDJ6Ii8+CiAgICA8L2c+Cjwvc3ZnPgo=); }
+    .ABBYY_Capture_Module_Wasm_Loading_Page .ABBYY_Capture_Module_Wasm_Loading_Page_loader:before {
+      content: '';
+      position: absolute;
+      background-image: url(data:image/png;base64,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);
+      width: 56px;
+      height: 56px;
+      animation-name: spin;
+      animation-duration: 1.2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg); } }
+
+.ABBYY_Capture_Module .ABBYY_Capture_Module__CropView {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative; }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module__CropView span.button {
+    color: #ffdc48;
+    cursor: pointer; }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module__CropView span {
+    font-weight: normal;
+    padding: 10px 0;
+    text-align: center; }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module__CropView .ABBYY_Capture_Module__TopPanel {
+    width: 100%;
+    padding: 0 16px; }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module__CropView .ABBYY_Capture_Module__TopPanel span {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      min-width: 20%; }
+      .ABBYY_Capture_Module .ABBYY_Capture_Module__CropView .ABBYY_Capture_Module__TopPanel span:last-child {
+        text-align: end; }
+      .ABBYY_Capture_Module .ABBYY_Capture_Module__CropView .ABBYY_Capture_Module__TopPanel span:first-child {
+        text-align: start; }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module__CropView .ABBYY_Capture_Module__TopPanel span:active:not(.button) {
+      opacity: 1; }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module__CropView .ABBYY_Capture_Module__CropView_WorkingPane {
+    flex-grow: 1;
+    overflow: hidden;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: calc(560px - 2 * 25px);
+    position: relative;
+    padding: 25px; }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module__CropView .ABBYY_Capture_Module__CropView_WorkingPane > div {
+      position: relative;
+      visibility: hidden; }
+      .ABBYY_Capture_Module .ABBYY_Capture_Module__CropView .ABBYY_Capture_Module__CropView_WorkingPane > div img {
+        display: block;
+        max-width: 100%;
+        max-height: inherit; }
+      .ABBYY_Capture_Module .ABBYY_Capture_Module__CropView .ABBYY_Capture_Module__CropView_WorkingPane > div .ABBYY_Capture_Module__CropView_CropLayer {
+        margin: -25px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: calc(100% + 2 * 25px);
+        height: calc(100% + 2 * 25px); }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module__CropView .ABBYY_Capture_Module__CropView_BottomPane {
+    width: 100%;
+    padding: 0 16px;
+    color: #ffffff; }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module__CropView .ABBYY_Capture_Module__CropView_BottomPane .ABBYY_Capture_Module__CropView_AutocropContainer {
+      text-align: center; }
+    .ABBYY_Capture_Module .ABBYY_Capture_Module__CropView .ABBYY_Capture_Module__CropView_BottomPane .ABBYY_Capture_Module__Navbar {
+      width: 100%;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 15px;
+      line-height: 52px; }
+      @media only screen and (max-width: 767px), screen and (min-width: 1366px) {
+        .ABBYY_Capture_Module .ABBYY_Capture_Module__CropView .ABBYY_Capture_Module__CropView_BottomPane .ABBYY_Capture_Module__Navbar .ABBYY_Capture_Module__Navbar_prev,
+        .ABBYY_Capture_Module .ABBYY_Capture_Module__CropView .ABBYY_Capture_Module__CropView_BottomPane .ABBYY_Capture_Module__Navbar .ABBYY_Capture_Module__Navbar_next {
+          background: transparent;
+          position: relative;
+          width: 24px;
+          height: 24px;
+          top: 0; }
+          .ABBYY_Capture_Module .ABBYY_Capture_Module__CropView .ABBYY_Capture_Module__CropView_BottomPane .ABBYY_Capture_Module__Navbar .ABBYY_Capture_Module__Navbar_prev:after,
+          .ABBYY_Capture_Module .ABBYY_Capture_Module__CropView .ABBYY_Capture_Module__CropView_BottomPane .ABBYY_Capture_Module__Navbar .ABBYY_Capture_Module__Navbar_next:after {
+            top: 0;
+            left: 0; } }
+  .ABBYY_Capture_Module .ABBYY_Capture_Module__CropView .ABBYY_Capture_Module__MessagePage {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+
+#ABBYY_Capture_Module__Loader_Container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column; }
+
+
+/*# sourceMappingURL=web-capture.css.map?beb0048ed88854a1acf9*/ 

@@ -1,0 +1,51 @@
+<!--
+  ~ ABBYY® Mobile Web Capture © 2019 ABBYY Production LLC.
+  ~ ABBYY is either a registered trademark or a trademark of ABBYY Software Ltd.
+  -->
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>ABBYY BANK</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>ABBYY BANK</title>
+
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="lib/angularjs/angular-material.min.css" />
+    <link rel="stylesheet" href="lib/angularjs/angular-ui-notification.min.css" />
+    <link rel="stylesheet" href="css/promo.css" />
+    <link rel="stylesheet" href="../libs/css/web-capture.css" />
+  </head>
+
+  <body ng-app="promo" class="promo-app">
+    <header class="promo-header">
+      <div class="promo-header-logo_bkgr"></div>
+      <img class="promo-header-logo_picture" src="images/promo/car.png" width="195px" />
+      <div class="promo-header-abbyy_text"></div>
+      <div class="promo-header-title_text">BANK</div>
+    </header>
+    <div class="promo-title" ui-view="title"></div>
+    <div class="promo-form-content" ui-view="content"></div>
+
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="lib/angularjs/angular.min.js"></script>
+    <script src="lib/angularjs/angular-animate.min.js"></script>
+    <script src="lib/angularjs/angular-aria.min.js"></script>
+    <script src="lib/angularjs/angular-messages.min.js"></script>
+    <script src="lib/angularjs/angular-ui-notification.min.js"></script>
+    <script src="lib/angularjs/angular-ui-router.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="lib/angularjs/angular-material.min.js"></script>
+    <script src="lib/angular-file-upload/dist/angular-file-upload.js"></script>
+    <!-- Mobile webcapture module -->
+    <script src="../libs/js/web-capture.js"></script>
+    <!-- Sample AngularJS App-->
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
